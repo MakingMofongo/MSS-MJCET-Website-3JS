@@ -19,7 +19,7 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
       <defs>
         <clipPath id={clipId}>
           {/* Replace the existing path with a text element */}
-          <text x="5" y="20" font-family="Georgia" font-size="20" fill="black">MSS</text>
+          <text x="5" y="20" fontFamily="Georgia" fontSize="20" fill="black">MSS</text>
         </clipPath>
       </defs>
       <rect clipPath={`url(#${clipId})`} width="100%" height="100%" />
