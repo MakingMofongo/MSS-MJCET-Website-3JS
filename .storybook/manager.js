@@ -6,6 +6,6 @@ addons.setConfig({
     ...themes.dark,
     brandImage: 'https://hamishw.com/icon.svg',
     brandTitle: 'Hamish Williams Components',
-    brandUrl: 'https://hamishw.com',
+    brandUrl: 'https://mss-mjcet-website-3-js.vercel.app/',
   },
 });

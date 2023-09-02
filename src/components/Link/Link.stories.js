@@ -7,8 +7,8 @@ export default {
 
 export const Default = () => (
   <StoryContainer style={{ fontSize: 18 }}>
-    <Link href="https://hamishw.com">Primary link</Link>
-    <Link secondary href="https://hamishw.com">
+    <Link href="https://mss-mjcet-website-3-js.vercel.app/">Primary link</Link>
+    <Link secondary href="https://mss-mjcet-website-3-js.vercel.app/">
       Secondary link
     </Link>
   </StoryContainer>
