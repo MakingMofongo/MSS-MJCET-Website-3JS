@@ -42,7 +42,7 @@ export const ProjectSummary = ({
     <svg
       aria-hidden="true"
       width="750"
-      height="137"
+      height="300"
       viewBox="0 0 750 137"
       data-visible={visible}
       data-light={theme.themeId === 'light'}
