@@ -9,7 +9,7 @@ export const Footer = ({ className }) => (
       <span className={styles.date}>
         {`© ${new Date().getFullYear()} MSS Projects Team.`}
       </span>
-      <Link secondary className={styles.link} href="https://www.linkedin.com/in/abdul-rasheed-3a5635276/" target="_self">
+      <Link secondary className={styles.link} href="https://www.linkedin.com/in/abdul-rasheed-esa-3a5635276/" target="_self">
         Crafted by yours truly
       </Link>
     </Text>
