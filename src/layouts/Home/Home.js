@@ -3,7 +3,7 @@
 import gamestackTexture2Large from 'assets/CWS.png';
 import RaniyaImg from 'assets/Raniya.png';
 import NabahatImg from 'assets/NabahatPic.png';
-import NadiaImg from 'assets/Nadia.png'
+import NadiaImg from 'assets/Nadia.png';
 import UmaimaImg from 'assets/UmaimaPic.png';
 import SufyanImg from 'assets/Sufyan.png';
 
