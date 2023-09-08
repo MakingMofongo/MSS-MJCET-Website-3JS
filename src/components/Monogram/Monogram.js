@@ -1,33 +1,26 @@
 import { forwardRef, useId } from 'react';
 import { classes } from 'utils/style';
+import { useTheme } from 'components/ThemeProvider';
+import { cssProps, media } from 'utils/style';
 import styles from './Monogram.module.css';
-
+import projectKatakana from 'assets/OG-logo-black.svg?url';
 export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => {
   const id = useId();
   const clipId = `${id}monogram-clip`;
+  const theme = useTheme();
+  const svgOpacity = theme.themeId === 'light' ? 0.7 : 1;
 
   return (
     <svg
-      aria-hidden
-      className={classes(styles.monogram, className)}
-      width="46"
-      height="29"
-      viewBox="0 0 46 29"
-      ref={ref}
-      {...props}
+      aria-hidden="true"
+      width="200"
+      height="100"
+      viewBox="-100 0 750 137"
+      data-light={theme.themeId === 'light'}
+      style={cssProps({ opacity: svgOpacity })}
+      className={styles.svg}
     >
-      <defs>
-        <clipPath id={clipId}>
-          {/* Replace the existing path with a text element */}
-          <text x="5" y="20" fontFamily="Georgia" fontSize="20" fill="black">MSS</text>
-        </clipPath>
-      </defs>
-      <rect clipPath={`url(#${clipId})`} width="100%" height="100%" />
-      {highlight && (
-        <g clipPath={`url(#${clipId})`}>
-          <rect className={styles.highlight} width="100%" height="100%" />
-        </g>
-      )}
+      <use href={`${projectKatakana}#katakana-project`} />
     </svg>
   );
 });
