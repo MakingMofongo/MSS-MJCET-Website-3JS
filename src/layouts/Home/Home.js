@@ -2,6 +2,11 @@
 // Upper screen texture ^^^
 import gamestackTexture2Large from 'assets/CWS.png';
 import RaniyaImg from 'assets/Raniya.png';
+import NabahatImg from 'assets/NabahatPic.png';
+import NadiaImg from 'assets/Nadia.png'
+import UmaimaImg from 'assets/UmaimaPic.png';
+import SufyanImg from 'assets/Sufyan.png';
+
 
 import gamestackTexture2Placeholder from 'assets/CWS.png';
 import gamestackTexture2 from 'assets/CWS.png';
@@ -165,7 +170,7 @@ export const Home = () => {
         index={1}
         title="Raniya Farhan Sheikh"
         description="Chief Coordinator"
-        buttonText="View website"
+        buttonText="Linkedin"
         buttonLink="https://www.instagram.com/stories/highlights/17865281374305480/"
         model={{
           type: 'phone',
@@ -177,7 +182,7 @@ export const Home = () => {
             },
             {
               srcSet: [RaniyaImg, RaniyaImg],
-              placeholder: RaniyaImg,
+              placeholder: gamestackTextureLarge,
             },
           ],
         }}
@@ -188,10 +193,10 @@ export const Home = () => {
         sectionRef={memberTwo}
         visible={visibleSections.includes(memberTwo.current)}
         index={2}
-        title="Raniya Farhan Sheikh"
-        description="Chief Coordinator"
-        buttonText="View website"
-        buttonLink="https://www.instagram.com/stories/highlights/17865281374305480/"
+        title="Nabahat Injela"
+        description="Chief Representative"
+        buttonText="Linkedin"
+        buttonLink="https://www.linkedin.com/in/ACoAAEJaDykBZArFjQK5laI1CE0DhawtQ9fxyAM?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B7MFcX8jpToWOkVMZMPAvfw%3D%3D"
         model={{
           type: 'phone',
           alt: 'C Work Shop',
@@ -201,8 +206,8 @@ export const Home = () => {
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [RaniyaImg, RaniyaImg],
-              placeholder: RaniyaImg,
+              srcSet: [NabahatImg,NabahatImg],
+              placeholder: gamestackTextureLarge,
             },
           ],
         }}
@@ -213,10 +218,10 @@ export const Home = () => {
         sectionRef={memberThree}
         visible={visibleSections.includes(memberThree.current)}
         index={3}
-        title="Raniya Farhan Sheikh"
-        description="Chief Coordinator"
-        buttonText="View website"
-        buttonLink="https://www.instagram.com/stories/highlights/17865281374305480/"
+        title="Nadia Aref"
+        description="Principal Secretary"
+        buttonText="Linkedin"
+        buttonLink="https://www.linkedin.com/in/ACoAADN3UoEB3w9O9M6Ai0m6LOGrEp_PDJaZjA4?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3BTBl61Yc1SYariZr60EZVzg%3D%3D"
         model={{
           type: 'phone',
           alt: 'C Work Shop',
@@ -226,8 +231,8 @@ export const Home = () => {
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [RaniyaImg, RaniyaImg],
-              placeholder: RaniyaImg,
+              srcSet: [NadiaImg,NadiaImg],
+              placeholder: gamestackTextureLarge,
             },
           ],
         }}
@@ -238,10 +243,10 @@ export const Home = () => {
         sectionRef={memberFour}
         visible={visibleSections.includes(memberFour.current)}
         index={4}
-        title="Raniya Farhan Sheikh"
-        description="Chief Coordinator"
-        buttonText="View website"
-        buttonLink="https://www.instagram.com/stories/highlights/17865281374305480/"
+        title="Umaima Khan"
+        description="Vice Chief Coordinator"
+        buttonText="Linkedin"
+        buttonLink="https://www.linkedin.com/in/ACoAADuZoLsBVZDhWrpkS24F4CMKDs7UNYAl-GY?lipi=urn%3Ali%3Apage%3Ad_flagship3_detail_base%3B7MFcX8jpToWOkVMZMPAvfw%3D%3D"
         model={{
           type: 'phone',
           alt: 'C Work Shop',
@@ -251,8 +256,8 @@ export const Home = () => {
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [RaniyaImg, RaniyaImg],
-              placeholder: RaniyaImg,
+              srcSet: [UmaimaImg,UmaimaImg],
+              placeholder: gamestackTextureLarge,
             },
           ],
         }}
@@ -263,10 +268,10 @@ export const Home = () => {
         sectionRef={memberFive}
         visible={visibleSections.includes(memberFive.current)}
         index={5}
-        title="Raniya Farhan Sheikh"
-        description="Chief Coordinator"
+        title="Mohammed Sufyan Talish"
+        description="Tech Lead"
         buttonText="View website"
-        buttonLink="https://www.instagram.com/stories/highlights/17865281374305480/"
+        buttonLink="https://www.linkedin.com/in/mohd-sufyaan-talish/"
         model={{
           type: 'phone',
           alt: 'C Work Shop',
@@ -276,8 +281,8 @@ export const Home = () => {
               placeholder: gamestackTexturePlaceholder,
             },
             {
-              srcSet: [RaniyaImg, RaniyaImg],
-              placeholder: RaniyaImg,
+              srcSet: [SufyanImg,SufyanImg],
+              placeholder: gamestackTextureLarge,
             },
           ],
         }}
