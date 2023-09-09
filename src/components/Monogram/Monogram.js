@@ -15,7 +15,7 @@ export const Monogram = forwardRef(({ highlight, className, ...props }, ref) => 
       aria-hidden="true"
       width="200"
       height="100"
-      viewBox="-100 0 750 137"
+      viewBox="-250 0 750 137"
       data-light={theme.themeId === 'light'}
       style={cssProps({ opacity: svgOpacity })}
       className={styles.svg}
