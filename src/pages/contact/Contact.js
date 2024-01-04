@@ -27,15 +27,15 @@ export const Contact = () => {
   const onSubmit = async event => {
     event.preventDefault();
     setStatusError('');
-
+  
     if (sending) return;
-
+  
     try {
       setSending(true);
 
-      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/message`, {
+      // Send POST request to the /message endpoint
+      const response = await fetch('/api/message', {
         method: 'POST',
-        mode: 'cors',
         headers: {
           'Content-Type': 'application/json',
         },
@@ -44,24 +44,24 @@ export const Contact = () => {
           message: message.value,
         }),
       });
+      // Parse the response
+      const data = await response.json();
+      // Check if the response is successful
+      if (!response.ok) {
+        // Throw an error if the response is not successful
+        throw new Error(data.error || 'There was an error');
+      }
 
-      const responseMessage = await response.json();
-
-      const statusError = getStatusError({
-        status: response?.status,
-        errorMessage: responseMessage?.error,
-        fallback: 'There was a problem sending your message',
-      });
-
-      if (statusError) throw new Error(statusError);
-
+      console.log(data.message);
+      // If the request is successful, mark the form as complete
       setComplete(true);
-      setSending(false);
     } catch (error) {
+      // Handle errors
+      console.error('Error:', error);
       setSending(false);
-      setStatusError(error.message);
+      setStatusError('There was a problem sending your message');
     }
-  };
+      };
 
   return (
     <Section className={styles.contact}>

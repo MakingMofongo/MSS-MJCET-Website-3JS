@@ -168,7 +168,7 @@ export const Home = () => {
         sectionRef={memberOne}
         visible={visibleSections.includes(memberOne.current)}
         index={1}
-        title="Raniya Farhan Sheikh"
+        title="Raniya Farhan Shaikh"
         description="Chief Coordinator"
         buttonText="Linkedin"
         buttonLink="https://www.instagram.com/stories/highlights/17865281374305480/"
